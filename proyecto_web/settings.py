@@ -109,9 +109,8 @@ CSRF_TRUSTED_ORIGINS=["https://journeyofmine.com.ar", "https://ajom-production.u
 
 CORS_ORIGIN_WHITELIST = [
 "https://journeyofmine.com.ar",
-"https://https://ajom-production.up.railway.app",
 "http://localhost:8080",
-"http://127.0.0.1:9000"
+"http://127.0.0.1:9000",
 ]
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
