@@ -1,0 +1,548 @@
+<html>
+
+<title>Galeria vertical</title>
+
+<body class="gallery">
+    
+  {% extends "proyecto_web_app/base.html" %}
+
+  {% load static %}
+
+  {% block content %}
+
+  <section class="page-section cta rounded p-6 p-md-5 m-md-4 text-center bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 text-center mx-auto">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-lower">Galería vertical</span>
+              <span class="section-heading-upper">¡Las imagenes en esta galería estan comprimidas y firmadas!</span>
+            </h2>
+            <p class="mb-0" style="font-size: 20">"La magia de la fotografía es que puede contener <br> la humanidad de un momento para toda la eternidad" <br> Ezequiel Linardelli.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section cta rounded p-3 p-md-5 m-md-4 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 text-center mx-auto">
+          <div>
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-lower">Comida</span>
+            </h2>
+            <p class="lead fw-normal">Entre bocados y sorbos sentimos como vamos siendo mas felices.</p>
+          </div>
+        </div>
+
+        <div id="GalleryCarousel" class="carousel slide" data-bs-ride="carousel" style="width: 50%;">
+
+          <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+            <li type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></li>
+            <li type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></li>
+            <li type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></li>
+            <li type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="4" aria-label="Slide 5"></li>
+          </ol>
+
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Food/GGrappes.webp' %}" class="d-block w-100" alt="GGrappes">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Food/BeerTromb.webp' %}" class="d-block w-100" alt="BeerTromb">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Food/Fries.webp' %}" class="d-block w-100" alt="Fries">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Food/BeerBoat.webp' %}" class="d-block w-100" alt="BeerBoat">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Food/GinTonic.webp' %}" class="d-block w-100" alt="GinTonic">
+            </div>
+          </div>
+          
+          <a class="carousel-control-prev" type="button" data-bs-target="#GalleryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" type="button" data-bs-target="#GalleryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>  
+
+  <section class="page-section cta rounded p-3 p-md-5 m-md-4 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 text-center mx-auto">
+          <div>
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-lower">Edificios</span>
+            </h2>
+            <p class="lead fw-normal">Los castillos de la nueva era</p>
+          </div>
+        </div>
+
+        <div id="GalleryCarousel1" class="carousel slide" data-bs-ride="carousel" style="width: 50%;">
+
+          <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="3" aria-label="Slide 4"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="4" aria-label="Slide 5"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="5" aria-label="Slide 6"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="6" aria-label="Slide 7"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="7" aria-label="Slide 8"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="8" aria-label="Slide 9"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="9" aria-label="Slide 10"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="10" aria-label="Slide 11"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="11" aria-label="Slide 12"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="12" aria-label="Slide 13"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="13" aria-label="Slide 14"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="14" aria-label="Slide 15"></li>
+            <li type="button" data-bs-target="#GalleryCarousel1" data-bs-slide-to="15" aria-label="Slide 16"></li>
+          </ol>
+
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/Latin.webp' %}" class="d-block w-100" alt="Latin">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/Dissapear.webp' %}" class="d-block w-100" alt="Disssapear">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/EcoPark.webp' %}" class="d-block w-100" alt="EcoPark">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/GlassClouds.webp' %}" class="d-block w-100" alt="GlassClouds">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/HotelView.webp' %}" class="d-block w-100" alt="HotelView">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/Illuminate.webp' %}" class="d-block w-100" alt="Illuminate">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/Linear.webp' %}" class="d-block w-100" alt="Linear">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/Merge.webp' %}" class="d-block w-100" alt="Merge">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/MetalShine.webp' %}" class="d-block w-100" alt="MetalShine">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/PaintedSky.webp' %}" class="d-block w-100" alt="PaintedSky">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/ScratchSky.webp' %}" class="d-block w-100" alt="ScratchSky">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/SomeCorner.webp' %}" class="d-block w-100" alt="SomeCorner">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/Stormy.webp' %}" class="d-block w-100" alt="Stormy">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/Streets.webp' %}" class="d-block w-100" alt="Streets">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Buildings/ThreePillars.webp' %}" class="d-block w-100" alt="ThreePillars">
+            </div>
+          </div>
+          
+          <a class="carousel-control-prev" type="button" data-bs-target="#GalleryCarousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" type="button" data-bs-target="#GalleryCarousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section cta rounded p-3 p-md-5 m-md-4 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 text-center mx-auto">
+          <div>
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-lower">Puntos de interés</span>
+            </h2>
+            <p class="lead fw-normal">Parte de nuestra historia será eterna.</p>
+          </div>
+        </div>
+
+        <div id="GalleryCarousel2" class="carousel slide" data-bs-ride="carousel" style="width: 50%;">
+
+          <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#GalleryCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+            <li type="button" data-bs-target="#GalleryCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></li>
+            <li type="button" data-bs-target="#GalleryCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></li>
+            <li type="button" data-bs-target="#GalleryCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></li>
+            <li type="button" data-bs-target="#GalleryCarousel2" data-bs-slide-to="4" aria-label="Slide 5"></li>
+            <li type="button" data-bs-target="#GalleryCarousel2" data-bs-slide-to="5" aria-label="Slide 6"></li>
+            <li type="button" data-bs-target="#GalleryCarousel2" data-bs-slide-to="6" aria-label="Slide 7"></li>
+            <li type="button" data-bs-target="#GalleryCarousel2" data-bs-slide-to="7" aria-label="Slide 8"></li>
+            <li type="button" data-bs-target="#GalleryCarousel2" data-bs-slide-to="8" aria-label="Slide 9"></li>
+            <li type="button" data-bs-target="#GalleryCarousel2" data-bs-slide-to="9" aria-label="Slide 10"></li>
+            <li type="button" data-bs-target="#GalleryCarousel2" data-bs-slide-to="10" aria-label="Slide 11"></li>
+          </ol>
+
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Monument/Sarmiento.webp' %}" class="d-block w-100" alt="Sarmiento">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Monument/CraneWB.webp' %}" class="d-block w-100" alt="CraneWB">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Monument/DarkWB.webp' %}" class="d-block w-100" alt="DarkWB">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Monument/DownRoadCongress.webp' %}" class="d-block w-100" alt="DownRoadCongress">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Monument/MechFlower.webp' %}" class="d-block w-100" alt="MechFlower">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Monument/NationCongress.webp' %}" class="d-block w-100" alt="NationCongress">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Monument/NightCongress.webp' %}" class="d-block w-100" alt="NightCongress">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Monument/Obelisco.webp' %}" class="d-block w-100" alt="Obelisco">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Monument/SunnyWB.webp' %}" class="d-block w-100" alt="SunnyWB">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Monument/WomansBridge.webp' %}" class="d-block w-100" alt="WomansBridge">
+            </div>
+          </div>
+          
+          <a class="carousel-control-prev" type="button" data-bs-target="#GalleryCarousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" type="button" data-bs-target="#GalleryCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section cta rounded p-3 p-md-5 m-md-4 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 text-center mx-auto">
+          <div>
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-lower">Naturaleza</span>
+            </h2>
+            <p class="lead fw-normal">Les debemos tanto y sin embargo muy pocos hacemos algo.</p>
+          </div>
+        </div>
+
+        <div id="GalleryCarousel3" class="carousel slide" data-bs-ride="carousel" style="width: 50%;">
+
+          <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="3" aria-label="Slide 4"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="4" aria-label="Slide 5"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="5" aria-label="Slide 6"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="6" aria-label="Slide 7"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="7" aria-label="Slide 8"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="8" aria-label="Slide 9"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="9" aria-label="Slide 10"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="10" aria-label="Slide 11"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="11" aria-label="Slide 12"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="12" aria-label="Slide 13"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="13" aria-label="Slide 14"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="14" aria-label="Slide 15"></li>
+            <li type="button" data-bs-target="#GalleryCarousel3" data-bs-slide-to="15" aria-label="Slide 16"></li>
+          </ol>
+
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/BirbBirb.webp' %}" class="d-block w-100" alt="BirbBirb">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/DarkLeaf.webp' %}" class="d-block w-100" alt="DarkLeaf">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/DockingNature.webp' %}" class="d-block w-100" alt="DockingNature">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/EcoReservoir.webp' %}" class="d-block w-100" alt="EcoReservoir">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/FlowerSky.webp' %}" class="d-block w-100" alt="FlowerSky">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/HoldinThere.webp' %}" class="d-block w-100" alt="HoldinThere">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/LikeViolets.webp' %}" class="d-block w-100" alt="LikeViolets">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/Overgrown.webp' %}" class="d-block w-100" alt="Overgrown">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/Recharging.webp' %}" class="d-block w-100" alt="Recharging">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/Rooting4You.webp' %}" class="d-block w-100" alt="Rooting4You">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/RosesFountain.webp' %}" class="d-block w-100" alt="RosesFountain">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/TinyFlowers.webp' %}" class="d-block w-100" alt="TinyFlowers">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/Urban.webp' %}" class="d-block w-100" alt="Urban">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/Waiting.webp' %}" class="d-block w-100" alt="Waiting">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/WoodRainy.webp' %}" class="d-block w-100" alt="WoodRainy">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Nature/YellowField.webp' %}" class="d-block w-100" alt="YellowField">
+            </div>
+          </div>
+          
+          <a class="carousel-control-prev" type="button" data-bs-target="#GalleryCarousel3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" type="button" data-bs-target="#GalleryCarousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <section class="page-section cta rounded p-3 p-md-5 m-md-4 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 text-center mx-auto">
+          <div>
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-lower">Simetria</span>
+            </h2>
+            <p class="lead fw-normal">Esas simetrias urbanas que son extrañamente placenteras.</p>
+          </div>
+        </div>
+
+        <div id="GalleryCarousel4" class="carousel slide" data-bs-ride="carousel" style="width: 50%;">
+
+          <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#GalleryCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+            <li type="button" data-bs-target="#GalleryCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></li>
+            <li type="button" data-bs-target="#GalleryCarousel4" data-bs-slide-to="2" aria-label="Slide 3"></li>
+            <li type="button" data-bs-target="#GalleryCarousel4" data-bs-slide-to="3" aria-label="Slide 4"></li>
+            <li type="button" data-bs-target="#GalleryCarousel4" data-bs-slide-to="4" aria-label="Slide 5"></li>
+            <li type="button" data-bs-target="#GalleryCarousel4" data-bs-slide-to="5" aria-label="Slide 6"></li>
+            <li type="button" data-bs-target="#GalleryCarousel4" data-bs-slide-to="6" aria-label="Slide 7"></li>
+            <li type="button" data-bs-target="#GalleryCarousel4" data-bs-slide-to="7" aria-label="Slide 8"></li>
+            <li type="button" data-bs-target="#GalleryCarousel4" data-bs-slide-to="8" aria-label="Slide 9"></li>
+          </ol>
+
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Shapes/DarkVibes.webp' %}" class="d-block w-100" alt="DarkVibes">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Shapes/Fancy.webp' %}" class="d-block w-100" alt="Fancy">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Shapes/GlassTriangle.webp' %}" class="d-block w-100" alt="GlassTriangle">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Shapes/Rooftop.webp' %}" class="d-block w-100" alt="Rooftop">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Shapes/Simmetry.webp' %}" class="d-block w-100" alt="Simmetry">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Shapes/StopWater.webp' %}" class="d-block w-100" alt="StopWater">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Shapes/Trainwreck.webp' %}" class="d-block w-100" alt="Trainwreck">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Shapes/UnderPass.webp' %}" class="d-block w-100" alt="UnderPass">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Shapes/View.webp' %}" class="d-block w-100" alt="View">
+            </div>
+          </div>
+          
+          <a class="carousel-control-prev" type="button" data-bs-target="#GalleryCarousel4" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" type="button" data-bs-target="#GalleryCarousel4" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section cta rounded p-3 p-md-5 m-md-4 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 text-center mx-auto">
+          <div>
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-lower">Urbano</span>
+            </h2>
+            <p class="lead fw-normal">Pequeños detalles que nos rodean y solo vemos cuando frenamos un poco.</p>
+          </div>
+        </div>
+
+        <div id="GalleryCarousel5" class="carousel slide" data-bs-ride="carousel" style="width: 50%;">
+
+          <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#GalleryCarousel5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+            <li type="button" data-bs-target="#GalleryCarousel5" data-bs-slide-to="1" aria-label="Slide 2"></li>
+            <li type="button" data-bs-target="#GalleryCarousel5" data-bs-slide-to="2" aria-label="Slide 3"></li>
+            <li type="button" data-bs-target="#GalleryCarousel5" data-bs-slide-to="3" aria-label="Slide 4"></li>
+            <li type="button" data-bs-target="#GalleryCarousel5" data-bs-slide-to="4" aria-label="Slide 5"></li>
+            <li type="button" data-bs-target="#GalleryCarousel5" data-bs-slide-to="5" aria-label="Slide 6"></li>
+          </ol>
+
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Street/YoungTown.webp' %}" class="d-block w-100" alt="YoungTown">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Street/Changes.webp' %}" class="d-block w-100" alt="Changes">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Street/Ephemeral.webp' %}" class="d-block w-100" alt="Ephemeral">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Street/EternalLove.webp' %}" class="d-block w-100" alt="EternalLove">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Street/PastTimes.webp' %}" class="d-block w-100" alt="PastTimes">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Street/SoBright.webp' %}" class="d-block w-100" alt="SoBright">
+            </div>
+          </div>
+          
+          <a class="carousel-control-prev" type="button" data-bs-target="#GalleryCarousel5" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" type="button" data-bs-target="#GalleryCarousel5" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section cta rounded p-3 p-md-5 m-md-4 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 text-center mx-auto">
+          <div>
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-lower">Arte</span>
+            </h2>
+            <p class="lead fw-normal">Desde los inicios aprendimos a expresarnos a través del arte.</p>
+          </div>
+        </div>
+
+        <div id="GalleryCarousel6" class="carousel slide" data-bs-ride="carousel" style="width: 50%;">
+
+          <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#GalleryCarousel6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+            <li type="button" data-bs-target="#GalleryCarousel6" data-bs-slide-to="1" aria-label="Slide 2"></li>
+            <li type="button" data-bs-target="#GalleryCarousel6" data-bs-slide-to="2" aria-label="Slide 3"></li>
+          </ol>
+
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Art/Framed.webp' %}" class="d-block w-100" alt="Framed">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Art/FrontLook.webp' %}" class="d-block w-100" alt="FrontLook">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'proyecto_web_app/img/Gallery/Vert/Art/OctoFluor.webp' %}" class="d-block w-100" alt="OctoFluor">
+            </div>
+          </div>
+          
+          <a class="carousel-control-prev" type="button" data-bs-target="#GalleryCarousel6" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" type="button" data-bs-target="#GalleryCarousel6" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <button type="button" class="btn btn-secondary justify-content-center align-content-between" id="btn-back-to-top">
+        
+    <i class="bi bi-arrow-up"></i>
+
+  </button>
+
+  {% endblock %}
+
+</body>
+
+</html>

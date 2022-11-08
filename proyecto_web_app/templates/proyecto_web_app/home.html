@@ -1,0 +1,40 @@
+<html>
+
+<title>A journey of mine</title>
+
+<body class="home">
+
+  {% extends "proyecto_web_app/base.html" %}
+
+  {% load static %}
+
+  {% block content %}
+
+  <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+
+            <img class="intro-img img-fluid mb-5 mb-lg-2 rounded" src="{% static 'proyecto_web_app/img/Home/HomeIntro.jpg' %}" alt="HomeIntro">
+
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+              <h2 class="section-heading mb-4" >
+                <i class="bi bi-camera2"></i>
+                <span class="section-heading-upper">desde mi lente a tus ojos</span>
+                <span class="section-heading-lower">bienvenido</span>
+              </h2>
+              <p class="mb-3">En este lugar encontrarás como veo yo esta gran Ciudad de Buenos Aires a través de mi lente.
+              </p>
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {% endblock %}
+
+</body>
+
+
+</html>

@@ -1,0 +1,71 @@
+<html>
+
+<title>
+
+    Contacto
+
+</title>
+
+<body class="main">
+    
+{% extends "proyecto_web_app/base.html" %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <section class="page-section cta rounded p-3 p-md-4 m-md-5 text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 text-center mx-auto">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-lower">Contacto</span>
+                </h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="intro-text left-0 text-center p-5 bg-faded rounded">
+
+            {% if 'valido' in request.GET %}
+
+                <div class="alert alert-primary" role="alert">
+                    ¡Mensaje enviado con exito!
+                </div>
+
+            {% elif 'error' in request.GET %}
+
+                <div class="alert alert-danger" role="alert">
+                    ¡Hubo un error inexperado!
+                </div>
+
+            {% endif %}
+
+            <h2 class="section-heading mb-3">
+            <span class="section-heading-upper">
+
+                <form action="" method="post" style="width: fit-content; text-align: justify; margin: auto;">
+                    
+                    {%  csrf_token %}
+                    
+                    {{contactme|crispy}}
+
+                    <div style="text-align: center; margin: auto;">
+                        <input class="btn btn-info" type="button" value="Enviar">
+                    </div>
+
+                </form>
+
+            </span>
+            </h2>
+        </div>
+    </section>
+
+{% endblock %}
+
+</body>
+
+</html>

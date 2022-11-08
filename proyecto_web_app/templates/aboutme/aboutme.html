@@ -1,0 +1,66 @@
+<html>
+
+<title>Sobre mi</title>
+
+<body class="main">
+
+    {% extends "proyecto_web_app/base.html" %}
+
+    {% load static %}
+  
+    {% block content %}
+
+    <section class="page-section cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 text-center mx-auto">
+
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Fundador</span>
+                  <span><img src="{% static 'proyecto_web_app/img/AboutMe/Me.jpg' %}" class="img-thumbnail" style="max-width: 40%;" alt="Me"></span>
+                  <span class="section-heading-lower">Ezequiel Linardelli</span>
+                  <p class="mb-0" style="font-size: 20">Me dedico al diseño web y la fotografia</p>
+                </h2>
+                <p class="mb-0" style="font-size: 20">
+                    Fundé este sitio web con el propósito de unir mis dos pasiones en un solo lugar, y lograr que otros vean lo que yo veo cada vez que levanto mi lente.<br/>
+                    Este sitio no es solo una tienda sino un viaje 'A journey of Mine', en donde también podrás visitar blogs que me ayudan día a día en mi travesía. 
+                    Podrás ver mi galería de forma directa y disfrutar sin necesidad de comprar nada, pero si en caso que deseas llevarte contigo un poco de mi viaje 
+                    siempre tendrás la tienda disponible para ti y de paso ayudas a mantener este rincón de recuerdos.<br/>
+                    ¡Gracias por visitarme!<br/><br/>
+                </p>
+
+                <h2 class="section-heading mb-4">
+                    <p class="mb-0" style="font-size: 20">Redes sociales y contacto</p>
+                </h2>
+                <p class="mb-0">
+                    <a href="https://instagram.com/eze.linardelli/" target="_blank" class="link" style="color: #001328;">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCTFGwUUWVNRaoHZx1__W3Iw" target="_blank" class="link" style="color: #001328;">
+                        <span class="fa-stack fa-2x">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a href="mailto:theezelinar.arg@gmail.com" target="_blank" class="link" style="color: #001328;">
+                        <span class="fa-stack fa-2x">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-google fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    {% endblock %}
+
+
+</body>
+
+</html>
