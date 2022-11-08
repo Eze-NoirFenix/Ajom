@@ -107,7 +107,7 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS=["https://journeyofmine.com.ar", "https://ajom-production.up.railway.app"]
 
-CORS_ALLOWED_ORIGINS = [
+CORS_ORIGIN_WHITELIST = [
 "https://journeyofmine.com.ar",
 "https://https://ajom-production.up.railway.app",
 "http://localhost:8080",
