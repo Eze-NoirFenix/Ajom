@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'proyecto_web_app',
     'blog',
     'gallery',
@@ -56,6 +57,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -63,6 +67,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'proyecto_web.urls'
@@ -100,7 +105,18 @@ DATABASES = {
     }
 }
 
-CSRF_TRUSTED_ORIGINS=["https://journeyofmine.com.ar/", "https://ajom-production.up.railway.app/"]
+CSRF_TRUSTED_ORIGINS=["https://journeyofmine.com.ar", "https://ajom-production.up.railway.app"]
+
+CORS_ALLOWED_ORIGINS = [
+"https://journeyofmine.com.ar",
+"https://https://ajom-production.up.railway.app",
+"http://localhost:8080",
+"http://127.0.0.1:9000"
+]
+
+CORS_ALLOWED_ORIGIN_REGEXES = [
+r"^https://\w+\.journeyofmine\.com.ar$",
+]
 
 
 # Password validation
