@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Category(models.Model):
-    name=models.CharField(max_length=50)
+    name=models.CharField(max_length=50, null=True, blank=True)
     created=models.DateTimeField(auto_now_add=True)
     updated=models.DateTimeField(auto_now_add=True)
 
@@ -15,7 +15,7 @@ class Category(models.Model):
 
 class Product(models.Model):
 
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, null=True, blank=True)
     categories = models.ManyToManyField(Category)
     detail = models.CharField(max_length=50, null=True, blank=True)
     sitetitle=models.CharField(max_length=50, null=True, blank=True)
