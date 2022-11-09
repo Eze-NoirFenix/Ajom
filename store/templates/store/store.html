@@ -70,7 +70,7 @@
                     {% endfor %}
 
                     <div style="padding-top: 8%;">
-                        <a type="button" href="{'product.site'}" class="btn btn-secondary">
+                        <a type="button" href="{{product.site}}" target="_blank" class="link btn btn-secondary">
                             <i class="bi bi-bag-heart"></i>
                             Ir a comprar
                         </a>
@@ -85,6 +85,30 @@
         </div>
 
     </div>
+
+    <section>
+
+        <div class="container" style="width: 50%; margin: auto; padding-bottom: 4em; text-align: center; color: #ffffef;">
+          <p class="m-0 mbt">
+
+            Categorias:
+
+            {% for product in products %}
+
+                {% for category in post.categories.all %}
+
+                <a href="{% url 'category' category.id %}" class="link">{{category.name}}</a> ·
+
+                {% endfor %}
+
+            {% endfor %}
+
+            <a href="{% url 'store' %}" class="link">Todos</a>
+
+          </p>
+        </div>
+
+    </section>
 
 
     <button type="button" class="btn btn-secondary justify-content-center align-content-between" id="btn-back-to-top">

@@ -2,7 +2,7 @@
 
 <title>
 
-    Blog
+    Tienda
 
 </title>
 
@@ -36,77 +36,104 @@
 
         {% for product in products %}
 
-        <div class="col-md-4">
+            <div class="col-md-4">
 
-            <div class="intro-text p-2 p-md-5 m-md-4 text-center p-5 bg-faded rounded">
-                <h2 class="section-heading" >
-                <span class="section-heading-lower" style="font-size:80%">{{product.name}}</span>
-                </h2>
+                <div class="intro-text p-2 p-md-5 m-md-4 text-center p-5 bg-faded rounded">
+                    <h2 class="section-heading" >
+                    <span class="section-heading-lower" style="font-size:80%">{{product.name}}</span>
+                    </h2>
 
-                <div class="wrapper">
+                    <div class="wrapper">
 
-                    <div class="item" style="width: 100%;">
-                        <div class="polaroid"><img src="{{product.img.url}}">
-                        
+                        <div class="item" style="width: 100%;">
+                            <div class="polaroid"><img src="{{product.img.url}}">
+                            
+                            </div>
                         </div>
+
                     </div>
 
-                </div>
+                    <div style="padding: 2%;">
+                        <p class="mb-0" style="font-size: 18">Precio: {{product.price}}</p>
+                    </div>
 
-                <div style="padding: 2%;">
-                    <p class="mb-0" style="font-size: 18">Precio: {{product.price}}</p>
-                </div>
+                    <div style="padding: 2%;">
+                        <p class="mb-0" style="font-size: 16">Detalle: {{product.detail}}</p>
+                    </div>
 
-                <div style="padding: 2%;">
-                    <p class="mb-0" style="font-size: 16">Detalle: {{product.detail}}</p>
-                </div>
+                    {% for category in product.categories.all %}
 
-                <div style="padding: 2%;">
-                    <p class="mb-0" style="font-size: 16">Categoria: {{product.categories}}</p>
-                </div>
-
-                <div style="padding-top: 8%;">
-                    <a type="button" href="{'product.site'}" class="btn btn-secondary">
-                        <i class="bi bi-bag-heart"></i>
-                        Ir a comprar
-                    </a>
-                </div>
-
-            </div>
-        
-        </div>
-
-        {% endfor %}
-        
-        <section>
-
-            <div class="container" style="width: 50%; margin: auto; padding-bottom: 4em; text-align: center; color: #ffffef;">
-              <p class="m-0 mbt">
-
-                Categorias:
-
-                {% for product in products %}
-
-                    {% for category in post.categories.all %}
-
-                    <a href="{% url 'category' category.id %}" class="link">{{category.name}}</a> ·
+                    <div style="padding: 2%;">
+                        <p class="mb-0" style="font-size: 16">Categoria: {{category.name}}</p>
+                    </div>
 
                     {% endfor %}
 
-                {% endfor %}
+                    <div style="padding-top: 8%;">
+                        <a type="button" href="{{product.site}}" target="_blank" class="link btn btn-secondary">
+                            <i class="bi bi-bag-heart"></i>
+                            Ir a comprar
+                        </a>
+                    </div>
 
-                <a href="{% url 'store' %}" class="link">Todos</a>
-
-              </p>
+                </div>
+            
             </div>
 
+        {% endfor %}
+
+        </div>
+
+    </div>
+
+    <section>
+
+        <div class="container" style="width: 50%; margin: auto; padding-bottom: 4em; text-align: center; color: #ffffef;">
+          <p class="m-0 mbt">
+
+            Categorias:
+
+            {% for product in products %}
+
+                {% for category in post.categories.all %}
+
+                <a href="{% url 'category' category.id %}" class="link">{{category.name}}</a> ·
+
+                {% endfor %}
+
+            {% endfor %}
+
+            <a href="{% url 'store' %}" class="link">Todos</a>
+
+          </p>
+        </div>
+
     </section>
+
 
     <button type="button" class="btn btn-secondary justify-content-center align-content-between" id="btn-back-to-top">
         
         <i class="bi bi-arrow-up"></i>
-    
+
     </button>
+
+    {% else %}
+
+    <section class="page-section cta rounded p-6 p-md-5 m-md-4 text-center bg-light">
+        <div class="container">
+        <div class="row">
+            <div class="col-xl-9 text-center mx-auto">
+                <h2 class="section-heading mb-4">
+                <span class="section-heading-lower">Debes hacer login para comprar</span>
+                </h2>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    {% endif %}
+
 
     {% endblock %}
 
