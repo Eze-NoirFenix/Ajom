@@ -61,9 +61,13 @@
                         <p class="mb-0" style="font-size: 16">Detalle: {{product.detail}}</p>
                     </div>
 
+                    {% for category in product.categories.all %}
+
                     <div style="padding: 2%;">
-                        <p class="mb-0" style="font-size: 16">Categoria: {{product.categories}}</p>
+                        <p class="mb-0" style="font-size: 16">Categoria: {{category.name}}</p>
                     </div>
+
+                    {% endfor %}
 
                     <div style="padding-top: 8%;">
                         <a type="button" href="{'product.site'}" class="btn btn-secondary">
