@@ -64,29 +64,6 @@ p {
   color: rgba(255, 248, 220, 0.699);
 }
 
-*{
-  padding: 0;
-  margin: 0;
-}
-
-html {
-position: relative;
-min-height: 100%;
-}
-body {
-/* Margin bottom by footer height */
-margin-bottom: 60px;
-}
-.footer {
-position: absolute;
-bottom: 0;
-width: 100%;
-/* Set the fixed height of the footer here */
-height: 60px;
-background: #F37A1D;
-border-top: 3px solid #F37A1D;   
-}
-
 .site-heading {
   margin-top: 5rem;
   margin-bottom: 5rem;
