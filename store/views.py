@@ -5,7 +5,8 @@ from store.models import Product, Category
 def store(request):
 
     products = Product.objects.all()
-    return render(request, 'store/store.html', {'products': products})
+    category=Category.objects.all()
+    return render(request, 'store/store.html', {'category': category, 'products': products})
 
 def category(request, category_id):
 

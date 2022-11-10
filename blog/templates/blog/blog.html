@@ -23,7 +23,7 @@
                     <div class="intro-text left-0 text-center bg-faded p-5 rounded">
                         <h2 class="section-heading mb-4" >
                             <span class="section-heading-upper" style="font-size: 0.8em;">{{post.title}}</span>
-                            <span class="lead fw-normal" style="font-size: 0.5em;">{{post.content}}</span>
+                            <span class="section-heading-lower" style="font-size: 0.5em;">{{post.content}}</span>
                         </h2>
 
                         <div style="text-align: left; font-size: 0.7em; padding-top: 5em;">
@@ -38,30 +38,6 @@
         </section>
 
         {% endfor %}
-
-        <section>
-
-                <div class="container" style="width: 50%; margin: auto; padding-bottom: 4em; text-align: center; color: #ffffef;">
-                  <p class="m-0 mbt">
-
-                    Categorías:
-
-                    {% for post in posts %}
-
-                        {% for category in post.categories.all %}
-
-                        <a href="{% url 'category' category.id %}" class="link">{{category.name}}</a> ·
-
-                        {% endfor %}
-
-                    {% endfor %}
-
-                    <a href="{% url 'blog' %}" class="link">Todas las categorías</a>
-
-                  </p>
-                </div>
-
-        </section>
         
         <button type="button" class="btn btn-secondary justify-content-center align-content-between" id="btn-back-to-top">
         

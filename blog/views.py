@@ -4,10 +4,5 @@ from blog.models import Post, Category
 def blog(request):
 
     posts = Post.objects.all()
-    return render(request, 'blog/blog.html', {'posts': posts})
-
-def category(request, category_id):
-
-    category = Category.objects.get(id=category_id)
-    posts = Post.objects.filter(categories= category)
-    return render(request, 'blog/categories.html', {'category': category, 'posts': posts})
+    blog_category=Category.objects.all()
+    return render(request, 'blog/blog.html', {'blog_category': blog_category, 'posts': posts})

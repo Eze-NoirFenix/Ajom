@@ -93,16 +93,6 @@
 
             Categorias:
 
-            {% for product in products %}
-
-                {% for category in product.categories.all %}
-
-                <a href="{% url 'category' category.id %}" class="link">{{category.name}}</a> ·
-
-                {% endfor %}
-
-            {% endfor %}
-
             <a href="{% url 'store' %}" class="link">Todos</a>
 
           </p>
