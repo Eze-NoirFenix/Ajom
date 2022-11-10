@@ -9,8 +9,9 @@
 
     <!-- Bootstrap -->
     <link href="{% static 'proyecto_web_app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="http://journeyofmine.com.ar/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://journeyofmine.com.ar/favicon-16x16.png">
+    <link rel="shortcut icon" href="http://journeyofmine.com.ar/favicon.ico">
 
      <!-- Fonts -->
     
@@ -29,6 +30,7 @@
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/3411e61f4d.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -136,7 +138,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer text-faded text-center py-5">
+    <footer class="footer text-faded text-center py-3">
       <div class="container">
         <p class="m-0 mbt">
         	<a href="{% url 'privacy_policy' %}" class="link">Política de privacidad</a> ·
@@ -145,8 +147,31 @@
           <a href="{% url 'contact' %}" class="link">Contacto</a>
 		    </p>
 
-        <p class="m-0 mbt1">&copy; A journey through my eyes 2022</p>
-        <p class="m-0 mbt1">Todos los derechos reservados</p>
+        <p class="mb-0">
+          <a href="https://aws.com/" target="_blank" class="link" style="color: #001328;">
+              <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa-brands fa-aws fa-stack-1x fa-inverse"></i>
+              </span>
+          </a>
+          <a href="https://github.com/" target="_blank" class="link" style="color: #001328;">
+              <span class="fa-stack fa-2x">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+          </a>
+          <a href="https://railway.app/" target="_blank" class="link" style="color: #001328;">
+            <span class="fa-stack fa-2x">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-train fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </p>
+
+        <p class="m-0 mbt1">
+          <p>&copy; Journey of mine 2022 · Todos los derechos reservados</p>
+        </p>
+
       </div>
 	  </footer>
 
